@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.cardWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  background-color: aquamarine;
+}

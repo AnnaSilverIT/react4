@@ -1,0 +1,57 @@
+.card {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.cardContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardInfo{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  margin: 0;
+  padding: 10px;
+}
+
+.cardTitle {
+  font-size: 1.7em;
+  color: aliceblue;
+  margin: 0;
+  border: 1px solid gray;
+}
+
+.cardPrice {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 30px;
+  color: aliceblue;
+  border: 1px solid gray;
+}
+
+
+.cardSpeed {
+  border: 1px solid gray;
+  margin: 0;
+  padding: 10px;
+}
+
+.cardAdd {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(184, 241, 241);
+}
+
+.buttonWrapper {
+  border: 1px solid gray;
+}
+
+.price{
+  font-size: 80px;
+}
+
