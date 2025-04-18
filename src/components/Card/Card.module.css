@@ -1,13 +1,28 @@
 .card {
+  width: 20em;
+  height: 20em;
   margin: 10px;
-  border: 1px solid #ccc;
   border-radius: 10px;
+  opacity: 0.7;
+}
+
+
+.card:hover {
+  opacity: 1; 
+  width: 30em;
+  height: auto;
+  border: 2px solid black;
+  .buttonWrapper {
+    display: block;
+  }
+  .cardContainer {
+    align-items: start;
+  }
 }
 .cardContainer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .cardInfo{
@@ -41,17 +56,69 @@
 }
 
 .cardAdd {
-  margin: 5px;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: rgb(184, 241, 241);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(30, 194, 194);
+  border: none;
+  font-weight: bold;
+  width: 100%;
 }
 
 .buttonWrapper {
-  border: 1px solid gray;
+  border: none;
+  display: none;
 }
 
 .price{
   font-size: 80px;
 }
 
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modalContent {
+  background-color: white; 
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.modalContent h2 {
+  margin-top: 0; 
+}
+
+.modalContent input {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  margin-bottom: 15px; 
+  border-radius: 5px; 
+}
+
+.modalContent button {
+  padding: 10px; 
+  border-radius:5px; 
+}
+
+.modalContent button[type="submit"] {
+    background-color: rgb(30,194,194); 
+    color: white; 
+    border: none; 
+    cursor: pointer;
+}
+
+.modalContent button[type="button"] {
+    background-color: transparent; 
+    color: rgb(30,194,194); 
+    border: none; 
+    cursor: pointer; 
+}
